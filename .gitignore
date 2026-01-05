@@ -1,0 +1,19 @@
+# virtual env
+.venv/
+
+# python
+__pycache__/
+*.pyc
+
+# notebooks
+.ipynb_checkpoints/
+
+# data & models
+data/
+checkpoints/
+
+# OS
+.DS_Store
+
+# env files
+.env
