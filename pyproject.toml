@@ -1,0 +1,28 @@
+[project]
+name = "gpt-notes"
+version = "0.1.0"
+description = "Notes and code from Karpathy's GPT video lecture, modernized."
+readme = "README.md"
+requires-python = ">=3.11"
+dependencies = [
+  "numpy>=1.26",
+  "tqdm>=4.66",
+  "tiktoken>=0.7.0",
+  "torch>=2.2",
+]
+
+[project.optional-dependencies]
+dev = [
+  "ruff>=0.6.0",
+  "pytest>=8.0",
+]
+
+[tool.ruff]
+line-length = 100
+target-version = "py311"
+
+[tool.ruff.lint]
+select = ["E", "F", "I", "B", "UP"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
